@@ -17,8 +17,10 @@ function App(){
       <Header />
       <main>
         <ul>
-          <TodoList title={todoList[0].text} text={todoList[0].title}/>
-          <TodoList title={todoList[1].text} text={todoList[1].title}/>
+          <TodoList {...todoList[0]} />
+          <TodoList {...todoList[1]} />
+          {/* <TodoList title={todoList[0].text} text={todoList[0].title}/> */}
+          {/* <TodoList title={todoList[1].text} text={todoList[1].title}/> */}
         </ul>
       </main>
     </div>
