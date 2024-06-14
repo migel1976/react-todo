@@ -8,8 +8,13 @@ header{
   background: #fafafa;
 }
 
-header button{
-  color: red;
+li{
+  list-style-type: none;
+  border: 1px solid ;
+  border-radius: 10px;
+  background: #fafafa;
+  padding: 2rem;
+  margin: 2rem;
 }
 
 
