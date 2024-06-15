@@ -4,3 +4,5 @@ export const todoList=[
     {title:'third topic', text:'some third text here'},
     {title:'four topic', text:'some forth text here'},
 ]
+
+export const tabs={title:'TITLE', text:'TEXT here was be putten'}

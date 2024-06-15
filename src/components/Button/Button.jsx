@@ -1,17 +1,10 @@
 import './Button.css'
-export default function Button({children, onClick}){
-    // const handleBtn=()=>{
-    //     console.log('click me')
-    // }
-    // function handleMouseEnter(){
-    //     console.log('mouse enter')
-    // }
+export default function Button({children, onClick, isActive}){
+    let classes='button'
+    if(isActive) classes+=' active'
+
     return(
-        <button className='button' onClick={onClick}>{children}</button>
-        // <button className='button'
-        //  onClick={handleBtn}
-        //  onMouseEnter={handleMouseEnter}
-        //  onDoubleClick={()=>console.log('double click')}
-        // >{children}</button>
+        // <button className={isActive ? 'button active' : 'button'} onClick={onClick}>{children}</button>
+        <button className={classes} onClick={onClick}>{children}</button>
     )
 }
